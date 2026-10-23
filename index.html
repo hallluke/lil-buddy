@@ -1,12 +1,193 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>asmolfren — little Unicode people</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"></head><body><main><header><h1>asmolfren<span aria-hidden="true"> ✳</span></h1><span>tiny unicode people generator</span></header>
-
-<p class="intro">A tiny character made from Unicode text. Recreated from an old Tracery bot, with a few new possibilities.</p>
-<section class="panel" aria-labelledby="single-title"><div class="eyebrow">01 / SINGLE IMPRESSION</div><h2 id="single-title">One at a time</h2><div class="single-sheet"><span class="specimen-label" id="single-number">NO. 0001</span><div id="single" class="single fren" aria-live="polite"></div></div><div class="controls"><button class="button" id="new-single">TYPE AGAIN ↗</button><button class="button secondary" id="copy-single">Copy</button><span class="status" id="copy-status" role="status"></span></div></section>
-<section class="panel" aria-labelledby="gallery-title"><div class="eyebrow">02 / GROUP PORTRAIT</div><h2 id="gallery-title">A little crowd</h2><div id="gallery" class="gallery" aria-label="Generated Unicode people"></div><div class="controls"><button class="button" id="new-gallery">NEW SHEET ↗</button><button class="button secondary" id="copy-gallery">Copy all</button><label class="settings" for="count">Number <select id="count"><option>6</option><option selected>9</option><option>12</option><option>15</option></select></label><span class="status" id="gallery-status" role="status"></span></div></section>
-<section class="panel" aria-labelledby="walk-title"><div class="eyebrow">03 / IN MOTION</div><h2 id="walk-title">A little stroll</h2><div class="walk-stage" data-motion="bounce" aria-label="Two little friends strolling across the screen"><span class="specimen-label walk-id walk-id-left" id="walker-number-one"></span><span class="specimen-label walk-id walk-id-right" id="walker-number-two"></span><div class="walkers" id="walkers"><span class="walker fren" id="walker-one"></span><span class="walker fren" id="walker-two"></span></div></div><p class="scene-note">Two little travellers. Hover to pause the stroll.</p><div class="controls"><button class="button" id="new-walk">NEW WALKERS ↗</button><button class="button secondary" id="copy-walk">Copy both</button><span class="status" id="walk-status" role="status"></span></div></section>
-<section class="panel" aria-labelledby="podium-title"><div class="eyebrow">04 / AWARDS CEREMONY</div><h2 id="podium-title">Everyone's a winner</h2><div class="podium-stage"><div class="podium-slot" data-rank="2"><span class="specimen-label" id="silver-number"></span><div class="podium-fren fren" id="silver"></div><div class="podium-step">2</div></div><div class="podium-slot" data-rank="1"><span class="specimen-label" id="gold-number"></span><div class="podium-fren fren" id="gold"></div><div class="podium-step">1</div></div><div class="podium-slot" data-rank="3"><span class="specimen-label" id="bronze-number"></span><div class="podium-fren fren" id="bronze"></div><div class="podium-step">3</div></div></div><p class="scene-note">Three randomly selected champions. No judging criteria whatsoever.</p><div class="controls"><button class="button" id="new-podium">NEW CHAMPIONS ↗</button><button class="button secondary" id="copy-podium">Copy podium</button><span class="status" id="podium-status" role="status"></span></div></section>
-<p class="foot">No two friends quite alike. Some assembly quirks are to be expected.<br>Created by <a href="https://hallluke.github.io/">Luke Hall</a>. Recreated from an old bot built with <a href="https://github.com/galaxykate/tracery" target="_blank" rel="noopener noreferrer">Tracery by Kate Compton</a>, with a few new possibilities. Rendered with whatever glyphs your device can provide.</p>
-</main><script src="script.js" defer></script></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>
+      asmolfren — little Unicode friends
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>
+          asmolfren
+          <span aria-hidden="true">
+            ✳
+          </span>
+        </h1>
+        <span>
+          tiny unicode buddy generator
+        </span>
+      </header>
+      <p class="intro">
+        A tiny character made from Unicode text. Recreated from an old Tracery bot, with a few new possibilities.
+      </p>
+      <section class="panel" aria-labelledby="single-title">
+        <div class="eyebrow">
+          01 / SINGLE IMPRESSION
+        </div>
+        <h2 id="single-title">
+          One at a time
+        </h2>
+        <div class="single-sheet">
+          <span class="specimen-label" id="single-number">
+            NO. 0001
+          </span>
+          <div id="single" class="single fren" aria-live="polite">
+          </div>
+        </div>
+        <div class="controls">
+          <button class="button" id="new-single">
+            TYPE AGAIN ↗
+          </button>
+          <button class="button secondary" id="copy-single">
+            Copy
+          </button>
+          <span class="status" id="copy-status" role="status">
+          </span>
+        </div>
+      </section>
+      <section class="panel" aria-labelledby="gallery-title">
+        <div class="eyebrow">
+          02 / GROUP PORTRAIT
+        </div>
+        <h2 id="gallery-title">
+          A little crowd
+        </h2>
+        <div id="gallery" class="gallery" aria-label="Generated Unicode people">
+        </div>
+        <div class="controls">
+          <button class="button" id="new-gallery">
+            NEW SHEET ↗
+          </button>
+          <button class="button secondary" id="copy-gallery">
+            Copy all
+          </button>
+          <label class="settings" for="count">
+            Number
+            <select id="count">
+              <option>
+                6
+              </option>
+              <option selected>
+                9
+              </option>
+              <option>
+                12
+              </option>
+              <option>
+                15
+              </option>
+            </select>
+          </label>
+          <span class="status" id="gallery-status" role="status">
+          </span>
+        </div>
+      </section>
+      <section class="panel" aria-labelledby="walk-title">
+        <div class="eyebrow">
+          03 / IN MOTION
+        </div>
+        <h2 id="walk-title">
+          A little stroll
+        </h2>
+        <div class="walk-stage" data-motion="bounce" aria-label="Two little friends strolling across the screen">
+          <span class="specimen-label walk-id walk-id-left" id="walker-number-one">
+          </span>
+          <span class="specimen-label walk-id walk-id-right" id="walker-number-two">
+          </span>
+          <div class="walkers" id="walkers">
+            <span class="walker fren" id="walker-one">
+            </span>
+            <span class="walker fren" id="walker-two">
+            </span>
+          </div>
+        </div>
+        <p class="scene-note">
+          Two little travellers. Hover to pause the stroll.
+        </p>
+        <div class="controls">
+          <button class="button" id="new-walk">
+            NEW WALKERS ↗
+          </button>
+          <button class="button secondary" id="copy-walk">
+            Copy both
+          </button>
+          <span class="status" id="walk-status" role="status">
+          </span>
+        </div>
+      </section>
+      <section class="panel" aria-labelledby="podium-title">
+        <div class="eyebrow">
+          04 / AWARDS CEREMONY
+        </div>
+        <h2 id="podium-title">
+          Everyone's a winner
+        </h2>
+        <div class="podium-stage">
+          <div class="podium-slot" data-rank="2">
+            <span class="specimen-label" id="silver-number">
+            </span>
+            <div class="podium-fren fren" id="silver">
+            </div>
+            <div class="podium-step">
+              2
+            </div>
+          </div>
+          <div class="podium-slot" data-rank="1">
+            <span class="specimen-label" id="gold-number">
+            </span>
+            <div class="podium-fren fren" id="gold">
+            </div>
+            <div class="podium-step">
+              1
+            </div>
+          </div>
+          <div class="podium-slot" data-rank="3">
+            <span class="specimen-label" id="bronze-number">
+            </span>
+            <div class="podium-fren fren" id="bronze">
+            </div>
+            <div class="podium-step">
+              3
+            </div>
+          </div>
+        </div>
+        <p class="scene-note">
+          Three randomly selected champions. No judging criteria whatsoever.
+        </p>
+        <div class="controls">
+          <button class="button" id="new-podium">
+            NEW CHAMPIONS ↗
+          </button>
+          <button class="button secondary" id="copy-podium">
+            Copy podium
+          </button>
+          <span class="status" id="podium-status" role="status">
+          </span>
+        </div>
+      </section>
+      <p class="foot">
+        No two friends quite alike. Some assembly quirks are to be expected.
+        <br>
+        Created by
+        <a href="https://hallluke.github.io/">
+          Luke Hall
+        </a>
+        . Recreated from an old bot built with
+        <a href="https://github.com/galaxykate/tracery" target="_blank" rel="noopener noreferrer">
+          Tracery by Kate Compton
+        </a>
+        . Rendered with whatever glyphs your device can provide.
+      </p>
+    </main>
+    <script src="script.js" defer>
+    </script>
+  </body>
+</html>
