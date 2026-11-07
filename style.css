@@ -414,7 +414,7 @@ clip at paper edges. */
 }
 
 .podium-fren  {
-  font-size:clamp(14px,2vw,20px);
+  font-size:clamp(14px,2vw,17px);
   white-space:pre;
   max-width:100%;
   overflow-x:auto;
