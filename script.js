@@ -90,7 +90,7 @@ function newSingle() {
   current=generate();
   single.textContent=current;
   document.getElementById('single-number').textContent='NO. '+nextSerial();
-  document.getElementById('copy-status').textContent='';
+  document.getElementById('single-status').textContent='';
 }
 function newGallery() {
   const count=Number(document.getElementById('count').value);
