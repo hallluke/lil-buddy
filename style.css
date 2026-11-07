@@ -102,6 +102,10 @@ h2  {
   filter:brightness(.9);
 }
 
+.button.primary  {
+  text-transform: uppercase;
+}
+
 .button.secondary  {
   background:transparent;
   color:var(--accent);
@@ -380,7 +384,7 @@ clip at paper edges. */
   }
 
   to  {
-    transform:translateY(-4px);
+    transform:translateY(-5px);
   }
 }
 
@@ -439,13 +443,16 @@ clip at paper edges. */
 .podium-slot[data-rank="2"] .podium-step  {
   height:66px;
   border-right:0;
-  background:repeating-linear-gradient(135deg,rgba(100,126,150,.12) 0 2px,transparent 2px 7px),var(--paper);
+  background:
+    repeating-linear-gradient(135deg,rgba(100,126,150,.12) 0 2px,transparent 2px 7px),var(--paper);
 }
 
 .podium-slot[data-rank="3"] .podium-step  {
   height:45px;
   border-left:0;
-  background:repeating-linear-gradient(45deg,rgba(100,126,150,.09) 0 1px,transparent 1px 7px),repeating-linear-gradient(135deg,rgba(100,126,150,.09) 0 1px,transparent 1px 7px),var(--paper);
+  background:
+    repeating-linear-gradient(45deg,rgba(100,126,150,.09) 0 1px,transparent 1px 7px),
+    repeating-linear-gradient(135deg,rgba(100,126,150,.09) 0 1px,transparent 1px 7px),var(--paper);
 }
 
 .scene-note  {
