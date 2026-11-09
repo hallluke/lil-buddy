@@ -1,184 +1,66 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="color-scheme" content="light">
-    <title>
-      asmolfren — little Unicode friends
-    </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>asmolfren — little Unicode friends</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="/lil-buddy/favicon.png" />
+    <!-- counter -->
+    <script>
+      window.goatcounter = {
+        path: function () {
+          const path = window.location.pathname.split("/").slice(2).join("/");
+          return "/repos/lil-buddy/404/" + path;
+        },
+        title: "404 — Asmolfren / Lil Buddies",
+      };
+    </script>
+    <script
+      data-goatcounter="https://lukehall.goatcounter.com/count"
+      async
+      src="https://gc.zgo.at/count.js"
+    ></script>
   </head>
   <body>
     <main>
       <header>
-        <h1>
-          asmolfren
-          <span aria-hidden="true">
-            ✳
-          </span>
-        </h1>
-        <span>
-          tiny unicode buddy generator
-        </span>
+        <h1>asmolfren<span aria-hidden="true"> ✳ </span></h1>
+        <span> tiny unicode buddy generator </span>
       </header>
       <p class="intro">
-        A tiny character made from Unicode text. Recreated from an old Tracery bot, with a few new possibilities.
+        A tiny character made from Unicode text. Recreated from an old Tracery bot, with a few new
+        possibilities.
       </p>
       <section class="panel" aria-labelledby="single-title">
-        <div class="eyebrow">
-          01 / Single Impression
-        </div>
-        <h2 id="single-title">
-          One at a time
-        </h2>
-        <div class="single-sheet">
-          <span class="specimen-label" id="single-number">
-            NO. 0001
-          </span>
-          <div id="single" class="single fren" aria-label="Generated Unicode person" aria-live="polite">
-          </div>
-        </div>
-        <div class="controls">
-          <button class="button primary" id="new-single">
-            Type again ↗
-          </button>
-          <button class="button secondary" id="copy-single">
-            Copy
-          </button>
-          <span class="status" id="single-status" role="status">
-          </span>
-        </div>
-      </section>
-      <section class="panel" aria-labelledby="gallery-title">
-        <div class="eyebrow">
-          02 / Group Portrait
-        </div>
-        <h2 id="gallery-title">
-          A little crowd
-        </h2>
-        <div id="gallery" class="gallery" aria-label="Generated Unicode people" aria-live="polite">
-        </div>
-        <div class="controls">
-          <button class="button primary" id="new-gallery">
-            New sheet ↗
-          </button>
-          <button class="button secondary" id="copy-gallery">
-            Copy all
-          </button>
-          <label class="settings" for="count">
-            Number
-            <select id="count">
-              <option>
-                6
-              </option>
-              <option selected>
-                9
-              </option>
-              <option>
-                12
-              </option>
-              <option>
-                15
-              </option>
-            </select>
-          </label>
-          <span class="status" id="gallery-status" role="status">
-          </span>
-        </div>
-      </section>
-      <section class="panel" aria-labelledby="walk-title">
-        <div class="eyebrow">
-          03 / In Motion
-        </div>
-        <h2 id="walk-title">
-          A little stroll
-        </h2>
-        <div class="walk-stage" data-motion="bounce" aria-label="Two little friends strolling across the screen">
-          <span class="specimen-label walk-id walk-id-left" id="walker-number-one">
-          </span>
-          <span class="specimen-label walk-id walk-id-right" id="walker-number-two">
-          </span>
-          <div class="walkers" id="walkers">
-            <span class="walker fren" id="walker-one">
-            </span>
-            <span class="walker fren" id="walker-two">
-            </span>
-          </div>
-        </div>
-        <p class="scene-note">
-          Two little travellers. Hover to pause the stroll.
-        </p>
-        <div class="controls">
-          <button class="button primary" id="new-walk">
-            New walkers ↗
-          </button>
-          <button class="button secondary" id="copy-walk">
-            Copy both
-          </button>
-          <span class="status" id="walk-status" role="status">
-          </span>
-        </div>
-      </section>
-      <section class="panel" aria-labelledby="podium-title">
-        <div class="eyebrow">
-          04 / Awards Ceremony
-        </div>
-        <h2 id="podium-title">
-          Everyone's a winner
-        </h2>
-        <div class="podium-stage">
-          <div class="podium-slot" data-rank="2">
-            <span class="specimen-label" id="silver-number">
-            </span>
-            <div class="podium-fren fren" id="silver">
-            </div>
-            <div class="podium-step">
-              2
-            </div>
-          </div>
-          <div class="podium-slot" data-rank="1">
-            <span class="specimen-label" id="gold-number">
-            </span>
-            <div class="podium-fren fren" id="gold">
-            </div>
-            <div class="podium-step">
-              1
-            </div>
-          </div>
-          <div class="podium-slot" data-rank="3">
-            <span class="specimen-label" id="bronze-number">
-            </span>
-            <div class="podium-fren fren" id="bronze">
-            </div>
-            <div class="podium-step">
-              3
-            </div>
-          </div>
-        </div>
-        <p class="scene-note">
-          Three randomly selected champions. No judging criteria whatsoever.
-        </p>
-        <div class="controls">
-          <button class="button primary" id="new-podium">
-            New champions ↗
-          </button>
-          <button class="button secondary" id="copy-podium">
-            Copy podium
-          </button>
-          <span class="status" id="podium-status" role="status">
-          </span>
+        <div class="eyebrow">ERROR / PAGE NOT FOUND</div>
+        <h2 id="single-title">404</h2>
+        <div>
+          <p>
+            No result found for this address. The page may have moved, or the URL may contain a
+            mistake.
+          </p>
+          <p>
+            <a href="/lil-buddy/">← Return to the fr<s>i</s>end<s>s</s></a>
+          </p>
         </div>
       </section>
       <p class="foot">
         No two friends quite alike. Some assembly quirks are to be expected.<br />
-        Created by <a href="https://lukehall.co/">Luke Hall</a>. Recreated from an old bot built with <a href="https://github.com/galaxykate/tracery" target="_blank" rel="noopener noreferrer">Tracery by Kate Compton</a>. Rendered with whatever glyphs your device can provide.
+        Created by <a href="https://lukehall.co/">Luke Hall</a>. Recreated from an old bot built
+        with
+        <a href="https://github.com/galaxykate/tracery" target="_blank" rel="noopener noreferrer"
+          >Tracery by Kate Compton</a
+        >. Rendered with whatever glyphs your device can provide.
       </p>
     </main>
-    <script src="script.js" defer>
-    </script>
+    <script src="script.js" defer></script>
   </body>
 </html>
