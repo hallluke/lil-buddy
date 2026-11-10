@@ -582,3 +582,30 @@ clip at paper edges. */
   text-decoration-thickness: 3px;
   text-decoration-style: double;
 }
+
+/* podium animation */
+
+.podium-slot div.jumper {
+  animation: wave 3s ease 12s infinite;
+}
+
+.podium-slot:nth-child(2) .jumper {
+  animation-delay: 9.5s;
+}
+
+.podium-slot:nth-child(3) .jumper {
+  animation-delay: 4s;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-10px);
+  }
+  20%,
+  100% {
+    transform: translateY(0);
+  }
+}
