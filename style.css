@@ -413,9 +413,9 @@ clip at paper edges. */
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  min-height: 175px;
-  padding: 15px 8px 0;
-  margin-bottom: 15px;
+  min-height: 155px;
+  padding: 0 8px 0;
+  margin: 5px 0 15px;
 }
 
 .podium-slot {
@@ -586,18 +586,20 @@ clip at paper edges. */
 /* podium animation */
 
 .podium-slot div.jumper {
-  animation: wave 3s ease 12s infinite;
+  animation: jump 3.1s ease infinite;
 }
 
-.podium-slot:nth-child(2) .jumper {
-  animation-delay: 9.5s;
+.podium-slot:nth-child(1) .jumper {
+  animation-duration: 4.7s;
+  animation-name: jump2;
 }
 
 .podium-slot:nth-child(3) .jumper {
-  animation-delay: 4s;
+  animation-duration: 5.9s;
+  animation-name: jump3;
 }
 
-@keyframes wave {
+@keyframes jump {
   0% {
     transform: translateY(0);
   }
@@ -605,6 +607,32 @@ clip at paper edges. */
     transform: translateY(-10px);
   }
   20%,
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes jump2 {
+  0% {
+    transform: translateY(0);
+  }
+  6.5957% {
+    transform: translateY(-10px);
+  }
+  13.1915%,
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes jump3 {
+  0% {
+    transform: translateY(0);
+  }
+  5.2542% {
+    transform: translateY(-10px);
+  }
+  10.5085%,
   100% {
     transform: translateY(0);
   }
