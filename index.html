@@ -16,12 +16,7 @@
     <!-- load counter -->
     <script>
       window.goatcounter = {
-        path: function () {
-          const params = new URLSearchParams(window.location.search);
-          const grammar = params.get("grammar");
-          const base = "/repos/lil-buddy/";
-          return grammar ? `${base}?grammar=${encodeURIComponent(grammar)}` : base;
-        },
+        path: "/repos/lil-buddy/";
       };
     </script>
     <script
